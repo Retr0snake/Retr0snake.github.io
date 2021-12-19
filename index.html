@@ -1,0 +1,55 @@
+<html> 
+ <title> Retr0snake :] 9.00 AUTO HOST</title>
+<div  style=: 4px 4px 4px black;font-size:15px;text-align:center;color:White; 
+"/></div>
+<head>   
+<style>
+
+html, body {
+background-repeat: no-repeat;
+background-color: #24272b;
+color: white;
+text-align= center;
+margin: 0px;
+overflow: hidden;
+}
+</style>
+<meta charset="utf-8">
+<script>
+function load_poc(){
+var xhr = new XMLHttpRequest();
+xhr.responseType = "arraybuffer";
+xhr.open("GET",PLfile,true);
+xhr.send();
+xhr.onreadystatechange=function(){
+if (xhr.readyState == 4){
+  var tmp0 = new Uint8Array(xhr.response.byteLength);
+  tmp0.set(new Uint8Array(xhr.response), 0);
+  var payload = new Uint32Array(tmp0);
+  ghPL = payload;
+  setTimeout(poc, 1500); 
+  }
+};
+}
+
+function allset() {
+window.progress.innerHTML="Payload loaded";
+}
+
+function load_goldhen(){
+    progress.innerHTML="*9.00 AUTOMATIC HOST BY Retr0snake*";
+    PLfile = "goldhen.bin";
+    load_poc();
+}
+</script>
+<script src="int64.js"></script>
+<script src="rop.js"></script>
+<script src="kexploit.js"></script>
+<script src="webkit.js"></script>
+</head>
+
+<body onload="load_goldhen()"
+
+<div> <img src="poptart1redrainbowfix_1.0.gif" width="1600" height="1000" </div>
+
+</html>
